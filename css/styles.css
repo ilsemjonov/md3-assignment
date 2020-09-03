@@ -8,7 +8,6 @@ body {
 
 #header-nav {
     background-color: #999999;
-    /* border-radius: 0;*/
     border-bottom: 2px solid black; 
     padding: 1px 0px 0px 0px; 
 }
@@ -20,10 +19,6 @@ body {
     margin: 10px 15px 10px 0;
 }
 
-/* .navbar-brand {
-    padding-top: 25px;
-  } */
-
 #name {
     margin-left: 10px;
 }
@@ -34,7 +29,7 @@ body {
 }
 
 #menu {
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-align: center;
     margin-top: 20px;
     font-weight: 600;
@@ -52,10 +47,6 @@ body {
     font-weight: 600;
 }
 
- 
-/* #name .navbar-brand {
-    padding-top: 20px;
-} */
   
   .navbar-brand h1 { /* Restaurant name */
     font-family: 'Lora', serif;
@@ -85,7 +76,7 @@ body {
 
   #nav-list {
     margin-top: 10px;
-    /* border-top: 2px solid black; */
+    
   }
 
   #nav-list li {
@@ -126,6 +117,30 @@ body {
     clear: both;
     margin-top: -30px;
   }
+
+  #toggler.navbar-toggler {
+    width: 47px;
+    height: 34px;
+    background-color: #999999;
+    border: 2px solid black;
+    border-color: black;
+}
+.navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+#toggler:active .line {
+  background-color: white;
+}
+
+#toggler:active.navbar-toggler {
+  border-color: white;
+}
+
   /* END HEADER */
 
   /********** Large devices only **********/
@@ -152,15 +167,6 @@ body {
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-  /* Header */
-  /* .navbar-brand {
-    padding-top: 15px;
-    height: 80px;
-  }
-  .navbar-brand h1 {  Restaurant name 
-    padding-top: 5px;
-    font-size: 5vw; 1vw = 1% of viewport width
-  } */
   .navbar-brand p { /* Kosher cert */
     font-size: .6em;
     margin-top: 12px;
@@ -172,10 +178,6 @@ body {
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
-  /* #collapsable-nav a span {  Collapsed nav menu glyph 
-    font-size: 1em;
-    margin-right: 5px;
-  }*/
 
   #call-btn > a {
     font-size: 1.5em;
